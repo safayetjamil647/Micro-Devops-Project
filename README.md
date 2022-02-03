@@ -1,5 +1,6 @@
 # Ingress-and-Egress-Data-Packet-Flow-Debuging
 What is ip address and its range
+![101920_1029_IPAddressCl1](https://user-images.githubusercontent.com/60421249/152415705-fd787216-fd6f-44b7-873c-32340402de2c.png)
 
 Data Packet Flow Example
 
