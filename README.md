@@ -14,3 +14,4 @@ A common egress meaning is the process of data leaving a network and transferrin
 
 Egress happens whenever data leaves an organization’s network, be it via email messages, as uploads to the cloud or websites, as a file transferred onto removable media like Universal Serial Bus (USB) drives and external hard drives, or through File Transfer Protocol (FTP) or Hypertext Transfer Protocol (HTTP) transfers.
 
+![800px-PacketFlowDiagram_v6_a svg](https://user-images.githubusercontent.com/60421249/152416474-89dc272e-44bd-403b-9e1d-43a42ea0b5d0.png)
