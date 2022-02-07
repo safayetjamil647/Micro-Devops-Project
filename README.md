@@ -22,3 +22,30 @@ A common egress meaning is the process of data leaving a network and transferrin
 Egress happens whenever data leaves an organization’s network, be it via email messages, as uploads to the cloud or websites, as a file transferred onto removable media like Universal Serial Bus (USB) drives and external hard drives, or through File Transfer Protocol (FTP) or Hypertext Transfer Protocol (HTTP) transfers.
 
 ![800px-PacketFlowDiagram_v6_a svg](https://user-images.githubusercontent.com/60421249/152416474-89dc272e-44bd-403b-9e1d-43a42ea0b5d0.png)
+
+
+Routing Table:
+
+A routing table is a set of rules, often viewed in table format, that is used to determine where data packets traveling over an Internet Protocol (IP) network will be directed. All IP-enabled devices, including routers and switches, use routing tables. See below a Routing Table:
+
+ Destination      Subnet mask         Interface
+ 128.75.43.0      255.255.255.0       Eth0
+ 128.75.43.0      255.255.255.128     Eth1
+ 192.12.17.5      255.255.255.255     Eth3
+ default                              Eth2
+ 
+ Entries of an IP Routing Table:
+A routing table contains the information necessary to forward a packet along the best path toward its destination. Each packet contains information about its origin and destination. Routing Table provides the device with instructions for sending the packet to the next hop on its route across the network.
+
+Each entry in the routing table consists of the following entries:
+
+Network ID:
+The network ID or destination corresponding to the route.
+Subnet Mask:
+The mask that is used to match a destination IP address to the network ID.
+Next Hop:
+The IP address to which the packet is forwarded
+Outgoing Interface:
+Outgoing interface the packet should go out to reach the destination network.
+Metric:
+A common use of the metric is to indicate the minimum number of hops (routers crossed) to the network ID.
