@@ -1,11 +1,13 @@
-# Ingress-and-Egress-Data-Packet-Flow-Debuging
+# Data-Packet-Flow-Debuging
 
 
-What is ip address and its range
+What is ip address and it's other components 
+![ipaddress](https://user-images.githubusercontent.com/60421249/152775019-f79dc90d-d795-433c-847f-6212d2a80818.png)
 
-![101920_1029_IPAddressCl1](https://user-images.githubusercontent.com/60421249/152416658-5bea342e-181a-434f-b3af-7bd714063f80.png)
 
 Data Packet Flow Example
+
+Before starting the workflows lets learn more about some inco-terms
 
 What is Ingress 
 
