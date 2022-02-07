@@ -28,11 +28,8 @@ Routing Table:
 
 A routing table is a set of rules, often viewed in table format, that is used to determine where data packets traveling over an Internet Protocol (IP) network will be directed. All IP-enabled devices, including routers and switches, use routing tables. See below a Routing Table:
 
- Destination      Subnet mask         Interface
- 128.75.43.0      255.255.255.0       Eth0
- 128.75.43.0      255.255.255.128     Eth1
- 192.12.17.5      255.255.255.255     Eth3
- default                              Eth2
+![route-table](https://user-images.githubusercontent.com/60421249/152777370-cde0f85c-008d-4468-a979-53be0eca5e1b.png)
+
  
  Entries of an IP Routing Table:
 A routing table contains the information necessary to forward a packet along the best path toward its destination. Each packet contains information about its origin and destination. Routing Table provides the device with instructions for sending the packet to the next hop on its route across the network.
