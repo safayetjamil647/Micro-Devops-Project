@@ -52,8 +52,15 @@ We will use docker for this lab
 ### What is docker ?
 
 Docker is a containerization tools, where we can development different types of tools and software in a isolated environment.
-
+Run this command:
 ```
 docker pull nginx
-
+```
+Then:
+```
+docker run nginx
+```
+It will run the nginx container.Open a new tab and open the container using :
+```
+docker exec -it nginx sh
 ```
