@@ -2,6 +2,8 @@
 
 
 What is ip address and it's other components 
+
+
 ![ipaddress](https://user-images.githubusercontent.com/60421249/152775019-f79dc90d-d795-433c-847f-6212d2a80818.png)
 
 
