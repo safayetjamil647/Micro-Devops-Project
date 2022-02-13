@@ -49,6 +49,10 @@ A common use of the metric is to indicate the minimum number of hops (routers cr
 
 We will use docker for this lab
 
+### What is tcp dump
+
+Tcpdump is a data-network packet analyzer computer program that runs under a command line interface. It allows the user to display TCP/IP and other packets being transmitted or received over a network to which the computer is attached.
+
 ### What is docker ?
 
 Docker is a containerization tools, where we can development different types of tools and software in a isolated environment.
