@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  frontend:
+        container_name: frontend_app
+        image: frontend
+        build:
+          context: ./frontend/my-app
+          target: production
+#frontend run command
+# docker run -p 80:80 --name frontend-app frontend
