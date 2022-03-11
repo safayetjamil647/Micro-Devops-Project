@@ -53,6 +53,11 @@ We will use docker for this lab
 
 Tcpdump is a data-network packet analyzer computer program that runs under a command line interface. It allows the user to display TCP/IP and other packets being transmitted or received over a network to which the computer is attached.
 
+### What is netsat?
+
+
+###
+
 ### What is docker ?
 
 Docker is a containerization tools, where we can development different types of tools and software in a isolated environment.
@@ -68,3 +73,25 @@ It will run the nginx container.Open a new tab and open the container using :
 ```
 docker exec -it nginx sh
 ```
+
+
+I have uploaded two micro-service developed by python and both of them listening each others.
+
+for service one use this docker command   docker build --tag service-one .
+and then 
+docker run -p 5000:5000 service-one
+
+and for   sevice two docker build --tag service-two .
+docker run -p 5001:5000 service-two
+
+or you can use docker compose file also.
+
+just build and serve those container and then check using docker ps for their status.
+then curl to their ip address and port number to see are they recieving request send sending the data packet through network.
+in my case ip address is not working because it bind with localhost which is actually loopback nic .lets tcpdum lo -i 
+then curl localhost 5000
+you will get that output.
+
+let s build a tiny frontend for this application and serve it using nginx.
+
+
