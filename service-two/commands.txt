@@ -1,0 +1,2 @@
+docker build --tag service-two .
+docker run -d -p 5001:5000 service-two
