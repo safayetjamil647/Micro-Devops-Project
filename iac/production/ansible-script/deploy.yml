@@ -1,0 +1,29 @@
+---
+
+
+- hosts: '{{ host }}'
+
+
+  gather_facts: yes
+    
+  remote_user: staging
+  become: yes 
+  become_method: sudo
+  vars:
+      app_project_path: "/home/project/car-service/"
+  
+
+  tasks:
+    - name: Create App Project Directory
+      tags: deploy
+      file:
+        path: "{{app_project_path}}"
+        state: directory
+        mode: 0777
+
+    - name: Project Download Script
+      shell: | 
+        git clone https://github.com/safayetjamil647/Data-Packet-Flow-Debuging.git
+        git checkout staging
+        
+    
