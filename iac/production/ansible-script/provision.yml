@@ -1,0 +1,53 @@
+---
+
+
+- hosts: '{{ host }}'
+
+
+  gather_facts: yes
+    
+  remote_user: staging
+  become: yes 
+  become_method: sudo
+  vars:
+      app_base_path: "/home/devhome/"
+  
+
+  tasks:
+    - name: Create App Base Directory
+      tags: deploy
+      file:
+        path: "{{app_base_path}}"
+        state: directory
+        mode: 0777
+
+    - name: Docker installer script
+      copy: src=docker.sh dest=/home/devhome/ mode=0777
+    - name: Docker installing
+      command: sh /home/devhome/docker.sh
+    
+    - name: Kubernetes installer script
+      copy: src=kubernetes.sh dest=/home/devhome/ mode=0777
+    - name: Kubernetes installing
+      command: sh /home/devhome/kubernetes.sh
+    
+    - name: Install Snap for packages
+      shell: | 
+        apt-get update
+        apt-get install snapd
+        snap --version
+
+    - name: MicroK8s installer
+      copy: src=microk8s.sh dest=/home/devhome/ mode=0777
+    # - name: Microk8s Install
+    #   command: sh /home/devhome/microk8s.sh 
+
+    - name: Git Installer script
+      copy: src=git.sh dest=/home/devhome/ mode=0777
+    - name: Git installing
+      command: sh /home/devhome/git.sh
+
+    - name: Git configure
+      copy: src=gitconfig.sh dest=/home/devhome/ mode=0777
+    - name: Configuration Done
+      command: sh /home/devhome/gitconfig.sh

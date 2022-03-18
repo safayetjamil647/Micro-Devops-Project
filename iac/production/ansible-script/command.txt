@@ -1,0 +1,12 @@
+
+##### FOR AWS EC2 VM ####
+/home/safayet/.ssh/aws_key.pem
+
+ansible-playbook provision.yml -i inventory.yml --extra-vars "host=dev" -v --private-key=/home/safayet/.ssh/ec2_key.pem
+
+
+
+##### FOR LINUX #####
+
+ansible-playbook provision.yml -i inventory.yml --extra-vars "host=staging" -v
+
