@@ -24,6 +24,7 @@
     - name: Project Download Script
       shell: | 
         cd /home/projects/micro-services/
-         git clone https://github.com/safayetjamil647/Micro-Devops-Tutorial.git
+        sudo rm -rf Micro-Devops-Tutorial
+        git clone https://github.com/safayetjamil647/Micro-Devops-Tutorial.git
 
     

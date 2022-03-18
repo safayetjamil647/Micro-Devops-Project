@@ -17,6 +17,9 @@ ENV NODE_ENV production
 WORKDIR /my-app
 # Cache and Install dependencies
 COPY package*.json ./
+
+RUN npm i react-scripts
+
 # Copy app files
 COPY . .
 # Build the app
