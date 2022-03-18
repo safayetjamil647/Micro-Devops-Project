@@ -10,7 +10,7 @@
   become: yes 
   become_method: sudo
   vars:
-      app_project_path: "/home/project/car-service/"
+      app_project_path: "/home/projects/micro-services/"
   
 
   tasks:
@@ -23,7 +23,7 @@
 
     - name: Project Download Script
       shell: | 
-        git clone https://github.com/safayetjamil647/Data-Packet-Flow-Debuging.git
-        git checkout staging
-        
+        cd /home/projects/micro-services/
+         git clone https://github.com/safayetjamil647/Micro-Devops-Tutorial.git
+
     

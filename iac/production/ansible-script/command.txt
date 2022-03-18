@@ -8,5 +8,5 @@ ansible-playbook provision.yml -i inventory.yml --extra-vars "host=dev" -v --pri
 
 ##### FOR LINUX #####
 
-ansible-playbook provison/provision.yml -i inventory.yml --extra-vars "host=staging" -v
+ansible-playbook provision.yml -i inventory.yml --extra-vars "host=staging" -v
 

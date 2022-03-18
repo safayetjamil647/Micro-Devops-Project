@@ -6,35 +6,36 @@ services:
         build:
           context: ./frontend/my-app
           target: dev
-        networks:
-            - service-net
         ports:
           - 3000:3000
         depends_on:
           - backendone
           - backendtwo
+        networks:
+            - service-net
   backendone:
         container_name: service_one
         image: service-one
         build:
           context: ./service-one
           target: dev
-        networks:
-            - service-net
         ports: 
           - 5001:5000
+        networks:
+            - service-net
   backendtwo:
         container_name: service_two
         image: service-two
         build:
           context: ./service-two
           target: dev
-        networks:
-            - service-net
+        
         ports: 
           - 5002:5000
         depends_on:
             - backendone
+        networks:
+            - service-net
 
 networks:
     service-net:
