@@ -39,4 +39,5 @@ services:
 
 networks:
     service-net:
+      driver: bridge
           
