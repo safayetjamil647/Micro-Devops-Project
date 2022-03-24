@@ -10,7 +10,7 @@ logging.basicConfig(level=logging.DEBUG,
                    handlers=[logging.StreamHandler()])
 
 logger = logging.getLogger()
-server_url = 'http://localhost:8201'
+server_url = 'http://localhost:8200'
 service_name = 'Service One'
 environment = 'production'
 
