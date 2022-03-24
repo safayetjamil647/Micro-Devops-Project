@@ -1,8 +1,7 @@
 name: Deploy Doc
 on:
   push:
-    branches:
-      - documentation
+    branches: [ documentation ]
 jobs:
   deploy:
     runs-on: ubuntu-latest
