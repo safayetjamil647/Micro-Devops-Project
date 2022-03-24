@@ -26,5 +26,4 @@
         cd /home/projects/micro-services/
         sudo rm -rf Micro-Devops-Tutorial
         git clone https://github.com/safayetjamil647/Micro-Devops-Tutorial.git
-
     
